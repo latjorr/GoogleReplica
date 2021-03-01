@@ -3,12 +3,7 @@ html, body {
   padding: 0;
 }
 
-header {
-  background-color: #333333;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
+
 
 nav {
   margin: 1;
@@ -24,11 +19,6 @@ nav li {
   width: 80px;
 }
 
-main {
-  text-align: center;
-  position: relative;
-  top: 80px;
-}
 
 main h1 {
   color: #333;
@@ -52,27 +42,6 @@ footer {
   
 }
 
-footer p {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 11px;  
-}
-
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-  text-align: center;
-}
-
-.jumbotron {
-  height: 800px;
-  background-image: url("http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 .btn-main {
   background-color: #333;
@@ -118,37 +87,4 @@ footer p {
   font-weight: 600;
   font-size: 23px;
   text-transform: uppercase;
-}
-
-.supporting p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 0 20px;
-  margin-bottom: 20px;
-}
-
-.supporting a {
-  background-color: white;
-  color: #333333;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 1.3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #333333; 
-}
-
-@media (max-width: 500px) {
-  main h1 {
-    font-size: 50px;
-    padding: 0 40px;
-  }
-
-  .supporting .col {
-    width: 100%;
-  }
 }
