@@ -1,16 +1,20 @@
 html, body {
   margin: 0;
   padding: 0;
+  flex:auto;
 }
-
 
 
 nav {
   margin: 1;
-  padding: 20px 0;
+  padding: 15px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
-nav li {
+li {
   color: #fff;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -20,15 +24,23 @@ nav li {
 }
 
 
-main h1 {
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 70px;
-  margin-top: 0px;
-  padding-top: 80px;
-  margin-bottom: 80px;
-  text-transform: uppercase;
+.middle {
+
+  margin: 150px;
+  height: 50%;
+  width: 75%;
+  display:flex;
+  align-items: center;
+  flex-flow: column;
+}
+.search {
+  border-style: hidden;
+}
+#search-bar {
+border-radius: 50px;
+outline: none;
+width: 45em;
+height: 4em;  
 }
 
 footer {
@@ -42,7 +54,6 @@ footer {
   
 }
 
-
 .btn-main {
   background-color: #333;
   color: #fff;
@@ -53,9 +64,10 @@ footer {
   padding: 16px 40px;
   text-decoration: none;
   text-transform: uppercase;
+  
 }
 
-.btn-default {
+.buttons {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 10px;
@@ -63,28 +75,6 @@ footer {
   padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;  
-  margin-bottom: 20px;      
+  margin: 20px;      
 }
 
-.supporting {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-
-.supporting .col {
-  font-family: 'Raleway', sans-serif;
-  text-align: center;
-  display:inline-block;
-  width: 200px;
-  height: 200px;
-}
-
-.supporting img {
-  height: 32px;
-}
-
-.supporting h2 {
-  font-weight: 600;
-  font-size: 23px;
-  text-transform: uppercase;
-}
