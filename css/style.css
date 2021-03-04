@@ -2,6 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
   /* flex:auto; */
+  position: relative;
+  
 }
 
 a {
@@ -14,22 +16,48 @@ a:hover{
 }
 
 nav {
-  margin: 0;
+  margin: auto;
   padding: 5px 0;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   flex-flow: row wrap;
   background-color: #fff;
   color: #2a2a2a;
+  /* position:relative; */
+  /* align-items: center; */
 }
 
 nav li {
   display: inline-block;
   width: 80px;
+  margin-right: 1px;
 }
 
+#sign-in{
+  padding: 5px 14px;
+  margin: 2px 2px;
+  border-radius:4px;
+  background-color: rgb(94, 94, 253);
+  color: rgb(245, 241, 241);
+  outline: none;
+  border: 1px solid transparent;
+}
 
+#sign-in:hover {
+	/* box-shadow: 0 0 2px white; */
+	/* border: 1px solid #e9e8e8; 
+  color: #ffffff;  */
+  background-color: rgb(112, 112, 246);
+  
+}
+
+.mid{
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  /* flex-shrink: 1; */
+}
 .logo {
   margin: 180px;
   height: 50%;
@@ -43,6 +71,9 @@ nav li {
   margin-top: 20px;
   text-align: center;
   position: relative;
+  justify-content:center;
+   
+  
 }
 #search-bar {
 border-radius: 50px;
@@ -52,6 +83,8 @@ width: 45em;
 height: 4em;
 padding: 10px 40px;
 /* padding-bottom: 10px;   */
+display:inline-block;
+justify-content: flex;
 }
 
 #search-bar:hover{
@@ -102,14 +135,14 @@ footer {
   background-color: rgb(235, 235, 235);
   color: #fff;
   padding: 10px 0px;
-  position:absolute;
+  position:fixed;
   bottom: 0;
   width: 100%;
   margin: 10 auto;
   display: flex;
   justify-content:space-between;
-  flex-direction: row;
-  flex-flow: wrap;
+  /* align-items:  center; */
+  flex-flow: row wrap;
   
   
   }
